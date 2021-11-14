@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+  background-color: lightcoral;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  background-color: white;
+  height: 100rem;
+  width: 88%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  margin: 3rem auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 20vh;
+  margin: 0.5rem 2rem 0 2rem;
+}
+
+header img {
+  width: 15%;
+  margin-left: 0.5rem;
+}
+
+.search-input {
+  width: 25rem;
+  height: 3rem;
+  border-radius: 10rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  border: 1px solid rgb(221, 214, 214);
+}
+
+.button {
+  width: 9rem;
+  height: 3.4rem;
+  border-radius: 10rem;
+  margin-left: -7rem;
+  background: linear-gradient(to right, #e9cfcf, rgb(243, 140, 140));
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button {
+  width: 9rem;
+  height: 3rem;
+  background: white;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background: linen;
+}
+
+main {
+  display: flex;
+}
+
+.recipe-preview {
+  width: 30%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  border-right: 1px solid rgb(223, 219, 219);
+}
+
+.recipe {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.recipe img {
+  height: 60vh;
+  width: 92%;
+  border: 2rem solid rgb(253, 249, 249);
+  justify-content: center;
+  align-self: center;
+}
+
+.recipe-description {
+  text-align: center;
+  background-color: rgb(253, 249, 249);
+}
+
+.recipe-title {
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.recipe-details {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+
+.prep-time,
+.servings {
+  font-size: 1rem;
+}
+
+.ingredients {
+  margin-top: 2rem;
+  background-color: rgb(248, 239, 239);
+}
+
+.cook-it-description {
+  font-size: 1rem;
+  display: inline;
+  padding: 5rem;
+}
+
+.ingredient {
+  padding: 0.5rem;
+  display: flex;
+}
+
+.ingredient p {
+  padding-left: 0.3rem;
+}
+
+.ingredient-title,
+.cook-it-title {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.ingredient-list {
+  list-style: none;
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.recipe-preview-element {
+  max-height: 25vh;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  background-color: rgb(253, 249, 249);
+  align-items: center;
+  font-size: 1rem;
+}
+
+.recipe-preview-element img {
+  width: 20%;
+  border-radius: 10rem;
+  height: 5%;
+  margin-left: 2rem;
+}
+
+.recipe-preview-title {
+  font-size: 1.5rem;
+}
+
+.recipe-preview-publisher {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.recipe-name {
+  font: 1rem;
+}
+
+.recipe-preview-description {
+  margin-left: 2rem;
+}
+
+.overlay {
+  position: fixed;
+
+  width: 87%;
+  height: 80vh;
+  top: 10%;
+  z-index: 100;
+}
+
+.upload-recipe {
+  overflow: hidden;
+  background-color: white;
+  width: 100%;
+}
+
+.add-new-recipe {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.recipe-info {
+  width: 50%;
+  text-align: center;
+}
+
+.ingredient-info {
+  width: 50%;
+  text-align: center;
+}
+
+.add-recipe-title {
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.add-recipe-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add-new-recipe input {
+  width: 40%;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.add-new-recipe label {
+  padding: 1rem;
+}
+
+.close-pop-up {
+  position: absolute;
+  left: 95%;
+  width: 2rem;
+  cursor: pointer;
+  top: 5%;
+}
+
+.add-recipe-button {
+  margin: 0 0 0 45%;
+}
+
+.hidden {
+  display: none;
+}
+
+#bookmark-png {
+  width: 5%;
+  height: 10%;
+  margin-top: -8%;
+}
+
+.bookmarks {
+  position: fixed;
+  width: 21%;
+  height: 21%;
+}
+
+.bookmark-element {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(253, 249, 249);
+}
+
+.bookmarks img {
+  height: 50%;
+  width: 20%;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.bookmark-title {
+  font-size: 1rem;
+}
+
+.remove-bookmark,
+.remove-recipe-preview {
+  margin-left: 1rem;
+}

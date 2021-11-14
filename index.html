@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forkify</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="img/logo.png" alt="" />
+        <form action="" class="search-recipe">
+          <input
+            name="searchedRecipe"
+            class="search-input"
+            placeholder="Search for over 10000 recipes"
+            type="text"
+          />
+          <button class="button search-recipe-button">Search</button>
+        </form>
+        <div class="add-bookmark-section">
+          <button class="nav-button add-recipe">Add recipe</button>
+          <button class="nav-button bookmark">Bookmarks</button>
+
+          <div class="bookmarks hidden">
+            <!-- <div class="bookmark-element">
+              <img src="img/test-2.jpg" alt="" />
+              <div class="recipe-preview-description">
+                <p class="recipe-title bookmark-title">Spaghetti</p>
+                <p class="recipe-preview-publisher">Martha Hunt</p>
+              </div>
+
+            </div> -->
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="recipe-preview">
+          <p class="recipe-preview-title">Recipe preview</p>
+          <!-- <div class="recipe-preview-element">
+            <img src="img/test-2.jpg" alt="" />
+            <div class="recipe-preview-description">
+              <p class="recipe-title">Spaghetti</p>
+              <p class="recipe-preview-publisher">Martha Hunt</p>
+            </div>
+          </div> -->
+          <div class="pagination"></div>
+        </div>
+
+        <div class="recipe">
+          <!-- <img src="img/test-1.jpg" alt="" class="recipe-img" />
+
+          <div class="recipe-description">
+            <p class="recipe-title">Pizza with tomato sos</p>
+            <div class="recipe-details">
+              <p class="prep-time">45 minutes 🕗</p>
+              <p class="servings">5 servings🧑</p>
+              <img src="img/bookmark.png" alt="">
+              
+            </div>
+
+            <div class="ingredients">
+              <h4 class="ingredient-title">Recipe Ingredients</h4>
+              <ul class="ingredient-list">
+                <li class="ingredient">
+                  <p class="ingredient-quantity">✔ 100</p>
+                  <p class="ingredient-unit">g</p>
+                  <p class="ingredient-description">cheese</p>
+                </li>
+
+                <li class="ingredient">
+                  <p class="ingredient-quantity">✔ 200</p>
+                  <p class="ingredient-unit">ml</p>
+                  <p class="ingredient-description">milk</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="cook-it">
+              <h4 class="cook-it-title">How to cook it</h4>
+              <div class="cook-it-description">
+                <p>
+                  The recipe was created by Martha Cook . You can see the recipe
+                  process <a href="http://">here</a>
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="overlay hidden">
+          <div class="upload-recipe">
+            <div class="add-new-recipe">
+              <div class="recipe-info">
+                <p class="add-recipe-title">Recipe Information</p>
+                <span class="close-pop-up">✖</span>
+                <form action="" class="add-recipe-form add-recipe-form-info">
+                  <label for=""
+                    >Title
+                    <input
+                      required
+                      placeholder="Recipe Title"
+                      name="title"
+                      type="text"
+                      style="margin-left: 4rem"
+                  /></label>
+
+                  <label for=""
+                    >Publisher
+                    <input
+                      required
+                      placeholder="Recipe publisher"
+                      name="publisher"
+                      type="text"
+                      style="margin-left: 1.4rem"
+                  /></label>
+
+                  <label for=""
+                    >Image URL
+                    <input
+                      required
+                      placeholder="Recipe Image URL"
+                      name="url"
+                      type="text"
+                      style="margin-left: 0.5rem"
+                  /></label>
+
+                  <label for=""
+                    >Prep time
+                    <input
+                      required
+                      placeholder="Recipe prep-time"
+                      name="prepTime"
+                      type="number"
+                  /></label>
+
+                  <label for=""
+                    >Servings
+                    <input
+                      required
+                      placeholder="Recipe servings"
+                      name="servings"
+                      type="number"
+                      style="margin-left: 1.6rem"
+                  /></label>
+                </form>
+              </div>
+
+              <div class="ingredient-info">
+                <p class="add-recipe-title">Ingredients</p>
+                <form
+                  action=""
+                  class="add-recipe-form add-recipe-form-ingredients"
+                >
+                  <label for=""
+                    >Ingredient 1
+                    <input
+                      placeholder="Quantity, Unit, Description"
+                      name="ingredient1"
+                      type="text"
+                    />
+                  </label>
+
+                  <label for=""
+                    >Ingredient 2
+                    <input
+                      placeholder="Quantity, Unit, Description"
+                      name="ingredient2"
+                      type="text"
+                  /></label>
+
+                  <label for=""
+                    >Ingredient 3
+                    <input
+                      placeholder="Quantity, Unit, Description"
+                      name="ingredient3"
+                      type="text"
+                  /></label>
+
+                  <label for=""
+                    >Ingredient 4
+                    <input
+                      placeholder="Quantity, Unit, Description"
+                      name="ingredient4"
+                      type="text"
+                  /></label>
+                  <label for=""
+                    >Ingredient 5
+                    <input
+                      placeholder="Quantity, Unit, Description"
+                      name="ingredient5"
+                      type="text"
+                  /></label>
+                </form>
+              </div>
+            </div>
+            <button class="button add-recipe-button">Upload</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
