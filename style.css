@@ -288,3 +288,7 @@ main {
 .remove-recipe-preview {
   margin-left: 1rem;
 }
+
+.ingredient-list {
+  text-align: center;
+}
